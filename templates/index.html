@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head%}
+<title>Class app</title>
+{% endblock%}
+
+{% block body %}
+<h1>Welcome home {{name}}</h1>
+{% for todos in todo  %}
+    <ul>
+  
+        <li>{{todos}}</li>
+  
+    </ul>
+{% endfor %}
+{% endblock  %}
